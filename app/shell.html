@@ -1,0 +1,22 @@
+<section>
+  <h2>Hello! What is your name?</h2>
+  <form class="form-inline">
+    <fieldset>
+      <label>Name</label>
+      <input type="text" data-bind="value: name" />
+      <button type="button" class="btn" data-bind="click: sayHello('user', event), enable: name">
+        Click Me
+      </button>
+
+      <button type="button" class="btn" data-bind="click: myFunc">
+        btn2
+      </button>
+    </fieldset>
+  </form>
+
+  <hr />
+
+  <input type="text" data-bind="value: firstName" />
+  <input type="text" data-bind="value: lastName" />
+  <span data-bind="text: fullName()"></span>
+</section>
